@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr{
+            background-color: white;
+        }
+        th{text-align: right;}
+        table{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+   <table border="0" cellpadding="10" cellspacing="1" bgcolor="black" align="center">
+       <form action="">
+       <tr>
+           <th>用户名：</th>
+           <td><input type="text" name="username" id="name" placeholder="请输入用户名">
+        <p>用户名必须是字母开头，后面字母或数字，不能大于15位</p>
+        </td>
+       </tr>
+       <tr>
+           <th>密码：</th>
+           <td><input type="password" name="password" id="pwd" placeholder="请输入密码">
+        <p>密码必须大于6位</p>
+        </td>
+       </tr>
+       <tr>
+           <th>确认密码：</th>
+           <td><input type="password" name="apassword" id="apwd" placeholder="请确认密码">
+            <p>密码必须大于6位</p></td>
+       </tr>
+       <tr>
+           <th>性别：</th>
+           <td><input type="radio" name="gender" id="a">男
+                <input type="radio" name="gender" id="b">女
+        </td>
+       </tr>
+       <tr>
+           <th>爱好：</th>
+           <td><input type="checkbox" name="hobby" id="c">打球
+            <input type="checkbox" name="hobby" id="c">吃饭
+            <input type="checkbox" name="hobby" id="c">睡觉
+        </td>
+       </tr>
+       <tr>
+           <th>学历：</th>
+           <td><select name="XL" id="XL">
+               <option value="a">小学</option>
+               <option value="b">初中</option>
+               <option value="c">高中</option>
+               <option value="d">大学</option>
+               <option value="e">硕士</option>
+               <option value="f">博士</option>
+           </select></td>
+       </tr>
+       <tr>
+           <th>技能：</th>
+           <td>
+            <select name="jn" id="jn" multiple>
+                <option value="a">游泳</option>
+                <option value="b">开车</option>
+                <option value="c">修电脑</option>
+                <option value="d">种田</option>
+                <option value="e">养猪</option>
+                <option value="f">喂牛</option>
+            </select> 
+           </td>
+       </tr>
+       <tr>
+           <th>头像：</th>
+           <td><input type="file" name="touxiang" id="touxiang" accept="image/*"></td>
+       </tr>
+       <tr>
+           <th>邮箱：</th>
+           <td><input type="email" name="youxiang" id="youxiang1" placeholder="请输入正确的邮箱格式"></td>
+       </tr>
+       <tr>
+           <th>生日：</th>
+           <td><input type="date" name="day" id="day" >
+        <p>请以yyyy-mm-dd格式输入日期</p>
+    </td>
+       </tr>
+       <tr>
+           <th>时间：</th>
+           <td><input type="time" name="shijian" id="shijian1" >
+        <p>请以hh:mm:ss格式输入时间</p>
+    </td>
+       </tr>
+       <tr>
+           <th>颜色：</th>
+           <td><input type="color" name="yanse" id="yanse"></td>
+       </tr>
+       <tr>
+           <th>主页：</th>
+           <td><input type="url" name="zhuyie" id="zhuyie" placeholder="请输入网址时加http："></td>
+       </tr>
+       <tr>
+           <th>搜索：</th>
+           <td><input type="search" name="sousuo" id="sousuo" placeholder="请输入你要搜索的内容"></td>
+       </tr>
+       <tr>
+           <th>电话：</th>
+           <td><input type="tel" name="dianhua" id="dianhua" placeholder="请输入正确的电话号码格式"></td>
+       </tr>
+       <tr>
+           <th>范围：</th>
+           <td><input type="range" name="fanwei" id="fanwei" min="0" max="100" step="1" value="0"></td>
+       </tr>
+       <tr>
+           <th>金额：</th>
+           <td><input type="number" name="jine" id="jine" min="-50" max="50" step="5" value="0"></td>
+       </tr>
+       <tr>
+        <th>城市：</th>
+        <td>
+            <input type="text" placeholder="请选择城市" list="citys">
+            <datalist id="citys">
+            <option value="nanchang">南昌</option>
+            <option value="guozhou">广州</option>
+            <option value="beijing">北京</option>
+            <option value="shanghai">上海</option>
+        </datalist>  
+        </td>
+    </tr>
+    <tr>
+        <th>备注：</th>
+        <td><textarea name="beizhu" id="beizhu" cols="30" rows="10" placeholder="请输入你的简介"></textarea></td>
+    </tr>
+    </form>
+   </table> 
+</body>
+</html>
