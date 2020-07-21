@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复选框</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .first{
+            position: relative;
+            width: 60px;
+            height: 35px;
+            border:1px solid #ddd;
+            border-radius: 20px;
+
+        }
+        .check input{
+            display: none;
+        }  
+        .check span::before{
+            display: inline-block;
+            content: "";
+            width:33px;
+            height: 33px;
+            border-radius: 50%;
+            border:1px solid #ddd;
+            line-height: 0.8;
+        }        
+        .check input:checked +span::before{   
+            position: absolute;
+            top:0;
+            right: 0;
+            width:33px;
+            height: 33px;
+            border-radius: 50%;
+            border:1px solid rgb(11, 240, 60);
+            line-height: 0.8;            
+        }
+         
+        
+    </style>
+</head>
+<body>
+    <div class="first">
+    <label class="check">
+   <input type="checkbox" name="a"> <span class="box"></span>
+ </label>
+</div>
+</body>
+</html>

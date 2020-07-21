@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>按钮</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         input,button{           
+            box-sizing: border-box;
+            outline: none;
+            font-family: inherit;
+            font-size: inherit;
+            border: 1px solid transparent;
+        } 
+        .search{
+            width: 490px;
+            height: 38px;
+           border: 2px solid #E1251B;
+           position: relative;
+        }
+        .search .upload{
+            position: absolute;
+            width: 18px;
+            height: 16px;
+            background: url(camera.png) no-repeat 50% 50%;
+            top: 10px;
+            right:80px;
+            z-index: 10;
+            cursor: pointer;
+        }
+       [type="file"]{
+            display: none;
+        }
+        [type="text"]{
+            padding-left:10px;
+            line-height: 34px;
+            font-size: 12px;
+        }
+        .search .but{
+            position: absolute;
+            top: -2px;
+            right: 0;
+            background-color: #E1251B;
+        }
+    </style>
+</head>
+<body>
+    <div class="search">
+        <input type="text" placeholder="费列罗巧克力">
+        <label class="upload">
+        <input type="file">
+        <span></span>
+        </label>
+         <button class="but"><img src="1.png" alt="aa"></button>
+    </div>
+</body>
+</html>
