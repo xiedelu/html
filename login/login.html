@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会员登录</title>
+    <link rel="shortcut icon" href="T1OjaVFl4dXXa.JOZB-114-114.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+         background-color: #21AD7E;
+        font-size: 14px;
+        }
+        .l-box{ 
+            box-sizing: border-box;
+            position: absolute;
+            width: 380px;
+            height: 420px;
+            padding: 35px;
+            background-color: white;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            border-radius: 4px;
+        }
+        
+        .l-box .first,
+        .l-box .second{
+           display: block;
+           box-sizing: border-box;
+           width:310px ;
+           height: 40px;
+           border: 1px solid #CFE0DA;
+           border-radius: 4px;
+           padding-left: 17px;
+           padding-right: 17px;
+           outline: none;
+           margin-left: 0px;
+           font-size: inherit;
+        } 
+        .l-box input::placeholder{
+            color: #CFE0DA;
+        }
+        .l-box .first{
+            margin-top: 34px;
+        } 
+        .l-box .second{
+            margin-top: 20px;
+        }
+        .l-box .first:focus,
+        .l-box .second:focus{
+            border: 1px solid #B1BFBA;
+        }
+        .xdl-check{   
+            margin-top: 20px;  
+            user-select: none;  
+            float: left;
+        }
+       .xdl-check input{
+           display: none;
+           
+       }
+       .xdl-check span::before{
+           display: inline-block;
+           content: "";
+           width: 20px;
+           height: 20px;
+           border:1px solid #ddd;
+           vertical-align: middle;
+           margin-right: 10px;
+           border-radius: 4px;
+
+       }
+       .xdl-check input:checked + span::before{
+           content: "✔";
+           color:#29C18E;
+
+       }
+   
+       .xdl-check:hover{
+           cursor: pointer;
+       }
+       .l-box form a{
+           float: right;
+           text-decoration: none;
+           color: inherit;
+           margin-top: 20px;
+           margin-right: 0px;
+       }
+       .l-box a:hover{
+          text-decoration: underline;
+       }
+       .clerafix::after{
+    display: table;
+    content: "";
+    clear: both;
+        }
+       .l-box .button{
+           display: block;
+           width: 310px;
+           height: 40px;
+           background-color: #28C08D;
+           border-radius: 4px;
+           color: white;
+           font-weight: bold;
+           font-size: 16px;
+           border: none;
+           outline: white;
+           margin-top: 62px;
+       }
+       .l-box .end{
+           text-align: center;
+           margin-top: 50px;         
+       }
+       .l-box .end a{
+           color: #28C08D;
+           text-decoration: none;
+       }
+       .l-box .end a:hover{
+           text-decoration: underline;
+           color:#28C08D;
+       }
+       .l-box .end span img{
+           display:inline-block;
+           vertical-align: middle;
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="l-box">
+        <img src="login.png" alt="图标">
+        <form action="#">
+            <input type="text"  class="first" placeholder="邮箱">
+            <input type="password"   class="second" placeholder="密码">
+            <label class="xdl-check">
+            <input type="checkbox" class="clerafix"><span>记住账号</span>
+            </label> 
+            <a href="#" class="clerafix">忘记密码</a>
+            <button class="button">登录</button>
+        </form> 
+    <div class="end">
+        <span class="foot">没有账号,&nbsp;&nbsp;&nbsp;<a href="#" class="">马上注册&nbsp;<img src="icon_arrow.png" alt="小图标"></a></span>
+    </div>
+</div>
+</body>
+</html>

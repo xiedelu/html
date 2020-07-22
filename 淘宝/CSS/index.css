@@ -6,7 +6,7 @@
     height: 45px;
     float: left;
     margin-left: 360px;
-    margin-top: 26px;   
+    margin-top: 22px;   
 }
 .header .tishi{
     width: 900px;
@@ -18,13 +18,15 @@
     background-color: #FEF2F2;
     text-align: center;
     line-height: 28px;
-    margin-top: 26px;
-    margin-left: 98px;
+    margin-top: 22px;
+    margin-left: 97px;
+    margin-bottom: 10px;
 }
 .header .tip{
     float: right; 
     margin-right:360px; 
-    margin-top: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 .header .tip img{
     display: inline;
@@ -35,6 +37,7 @@
     content: "";
     clear: both;
 }
+/* 中部开始 */
 .body{
     background:url(../banner.jpg) no-repeat 50% 50%;
     height: 600px;
@@ -44,55 +47,54 @@
 .body .login{
     width: 352px;
     height: 369px;
-
     background-color: white;
     position: absolute;
-    right: 361px;
+    right: 360px;
     top:121px; 
 }
 .body .login h4{
     font-size: 16px;
     margin-top: 39px;
-    margin-left: 27px;
+    margin-left: 25px;
 }
 .body .login .name{
-    display: inline-block;
-    background-image: url(../img/user_icon.png) no-repeat;     
+    margin-left: 25px;
+    margin-top: 30px;
 }
+
 .body .login .name input{
-    width: 260px;
-    height:38px;
-    margin-left: 67px;
-    margin-top: 30px;
+    background: url(../img/user_icon.png) no-repeat 0% 50% ;
+    width: 258px;
+    height:38px;  
     font-size: 14px;
-    
+    outline: none; 
+    padding-left: 44px; 
+    border: 1px solid #DDD ; 
 }
-/* .body .login .name input:focus{
-    border:1px solid white;
-} */
 .body .login .pwd{
-    display: inline-block;
-    background-image: url(../img/pass_icon.png) no-repeat;     
+    margin-left: 25px;
+    margin-top: 20px;
 }
+ 
 .body .login .pwd input{
-    width: 260px;
-    height:38px;
-    margin-left: 67px;
-    margin-top: 30px;
+    background: url(../img/pass_icon.png) no-repeat 0 50%;
+    width: 258px;
+    height:38px;  
+    outline: none;
+    padding-left: 44px;
+    border: 1px solid #DDD ;
 }
-/* .body .login .pwd input:focus{
-    border-color: transparent;
-} */
+
 .body .login .sub button{
-    width: 300px;
+    width: 304px;
     height: 42px;
     background-color: #f40;
-    margin-left: 31px;
+    margin-left: 25px;
     margin-top: 20px;
     border-radius: 2px;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
+   font-weight: bold;
+    font-size: 16px;
     border: none;
     outline: white;
 }
@@ -105,10 +107,13 @@
     margin-left: 26px;
     margin-top: 27px;
     position: relative;
+    
 }
 .body .login .qwlogin .b{
+    margin-left: -12px;
     position: absolute;
-    left:120px
+    left:110px;
+   
 }
 .body .login .qwlogin .b img{
     display: inline;
@@ -126,14 +131,16 @@
 }
 
 .body .login .last a{  
-    margin-top: 15px;
+    margin-top: 30px;
     float: right;
-    margin-right: 26px;
+    margin-right: 12px;
 }
 .body .login .last a:hover{
     color: #FF4400; 
 }
+/* 底部开始 */
 .foot {
+   
     margin-top: 62px;
     margin-left: 360px;
     margin-right: 360px;
@@ -141,36 +148,49 @@
     border-bottom: 1px solid #DDD;
 }
 .foot .db{
-    padding: 10px;
-    
+    box-sizing: border-box;
+    padding: 12px 0px;
+    width: 1200px;
+    height: 40px;
 }
-.foot .db a{
-    display: inline-block;
-    margin-left:20px;
+.foot .db a{   
+    margin-left:0px;  
     color: #6c6c6c;
+}
+
+.foot .db span{
+    margin-right: 6px;
+    margin-left: 5px;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #DDD;
 }
 .foot .db a:hover{
     color: #FF4400;
 }
-.foot .db a .first{
-   margin-left: 0px;
-}
-.aaa{
+
+.second{
     margin-left: 360px;
     display: inline-block;
     color: #6c6c6c;
     margin-top: 3px;
+    padding: 5px 0;
 }
-.aaa a{
-    margin-left: 5px;
+.second a{
+    
+    margin-right: 6px;
    
 }
-.aaa a:hover{
+
+.second a:hover{
     color:#FF4400
 }
 .two{
     
    padding-left:360px ;
 }
-
+.three{
+    margin-top: 13px;
+    padding-left:360px;
+}
 
